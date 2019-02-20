@@ -1,0 +1,82 @@
+<html>
+<title>Hamburger size test</title>
+<head>
+	<meta name="viewport" content="initial-scale=1">
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="hamburguer.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hamburguer">
+	<a class="hamburguer-link" id="hamb">
+		<div class="hamburguer-bar one"></div>
+		<div class="hamburguer-bar two"></div>
+		<div class="hamburguer-bar three"></div>
+	</a>
+</div>
+<div class="controls">
+	<div class="control">
+		<p class="control-p">
+			<span class="title">
+				Top Bar Width: <span id="width-one" class="show">20</span>
+			</span>
+			<a id="width-minus-one" class="minus-button">-</a>
+			<a id="width-plus-one" class="plus-button">+</a>
+		</p>
+	</div>
+	<div class="control">
+		<p class="control-p">
+			<span class="title">
+				Middle Bar Width: <span id="width-two" class="show">20</span>
+			</span>
+			<a id="width-minus-two" class="minus-button">-</a>
+			<a id="width-plus-two" class="plus-button">+</a>
+		</p>
+	</div>
+	<div class="control">
+		<p class="control-p">
+			<span class="title">
+				Bottom Bar Width: <span id="width-three" class="show">20</span>
+			</span>
+			<a id="width-minus-three" class="minus-button">-</a>
+			<a id="width-plus-three" class="plus-button">+</a>
+		</p>
+	</div>
+	<div class="control">
+		<p class="control-p">
+			<span class="title">
+				Thickness: <span id="height" class="show">2</span>
+			</span>
+			<a id="height-minus" class="minus-button">-</a>
+			<a id="height-plus" class="plus-button">+</a>
+		</p>
+	</div>
+	<div class="control">
+		<p class="control-p">
+			<span class="title">
+				Space: <span id="space" class="show">2</span>
+			</span>
+			<a id="space-minus" class="minus-button">-</a>
+			<a id="space-plus" class="plus-button">+</a>
+		</p>
+	</div>
+	<div class="control">
+		<p class="control-p">
+			<span class="title">
+				Roundness: <span id="round" class="show">0</span>
+			</span>
+			<a id="round-minus" class="minus-button">-</a>
+			<a id="round-plus" class="plus-button">+</a>
+		</p>
+	</div>
+	<div class="control">
+		<p class="control-p">
+			<span class="title aligner">Align:</span>
+			<a id="align-right" class="align-button">right</a>
+			<a id="align-center" class="align-button">center</a>
+			<a id="align-left" class="align-button">left</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>
