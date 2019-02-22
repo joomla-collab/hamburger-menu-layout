@@ -6,6 +6,8 @@
 	<script src="jquery.min.js" type="text/javascript"></script>
 	<script src="hamburger.js" type="text/javascript"></script>
 	<script src="jscolor.js" type="text/javascript"></script>
+	<script src="dom-to-image.min.js" type="text/javascript"></script>
+	<script src="FileSaver.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -143,6 +145,10 @@
 			<a id="b-width-minus" class="minus-button">-</a>
 			<a id="b-width-plus" class="plus-button">+</a>
 		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="control getpng">
+		<input type="button" name="getpng" value="Download PNG" id="getpng" onclick="getpng()" />
 	</div>
 	<div style="clear: both;"></div>
 	<div class="code-block">
