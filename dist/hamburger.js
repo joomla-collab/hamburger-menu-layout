@@ -295,10 +295,10 @@ jQuery(document).ready(function(){
 		jQuery('#hamb').css('padding-bottom', currHeightHalf+'px');
 		jQuery('#box-pad-h').text(currHeightHalf);
 	}
-
-	function getPng() {
-		domtoimage.toBlob(document.getElementById('hamb')).then(function (blob) {
-        		window.saveAs(blob, 'hamburger.png');
-		});
-	}
 });
+
+function getPng() {
+	domtoimage.toBlob(document.getElementById('hamb')).then(function (blob) {
+       		window.saveAs(blob, 'hamburger.png');
+	});
+}
