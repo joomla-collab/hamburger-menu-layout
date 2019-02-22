@@ -2,80 +2,207 @@
 <title>Hamburger size test</title>
 <head>
 	<meta name="viewport" content="initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:300,700" rel="stylesheet">
 	<script src="jquery.min.js" type="text/javascript"></script>
-	<script src="hamburguer.js" type="text/javascript"></script>
+	<script src="hamburger.js" type="text/javascript"></script>
+	<script src="jscolor.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="hamburguer">
-	<a class="hamburguer-link" id="hamb">
-		<div class="hamburguer-bar one"></div>
-		<div class="hamburguer-bar two"></div>
-		<div class="hamburguer-bar three"></div>
+<div class="hamburger" id="hamburger">
+	<a class="hamburger-link" id="hamb">
+		<div class="hamburger-bar one" id="line1"></div>
+		<div class="hamburger-bar two" id="line2"></div>
+		<div class="hamburger-bar three" id="line3"></div>
 	</a>
 </div>
 <div class="controls">
-	<div class="control">
-		<p class="control-p">
+	<div class="control top">
+		<div class="control-p">
 			<span class="title">
-				Top Bar Width: <span id="width-one" class="show">20</span>
+				Top Bar Width: 
 			</span>
+			<span id="width-one" class="show">20</span>
 			<a id="width-minus-one" class="minus-button">-</a>
 			<a id="width-plus-one" class="plus-button">+</a>
-		</p>
+		</div>
+		<div class="color">
+			<span>#</span>
+			<input type="text" class="jscolor {valueElement:'color1', styleElement:'line1', value:'000000'}" id="color1" value="000000" style="background-color: #000000;" />
+		</div>
 	</div>
-	<div class="control">
-		<p class="control-p">
+	<div class="control top">
+		<div class="control-p">
 			<span class="title">
-				Middle Bar Width: <span id="width-two" class="show">20</span>
+				Middle Bar Width: 
 			</span>
+			<span id="width-two" class="show">20</span>
 			<a id="width-minus-two" class="minus-button">-</a>
 			<a id="width-plus-two" class="plus-button">+</a>
-		</p>
+		</div>
+		<div class="color">
+			<span>#</span>
+			<input type="text" class="jscolor {valueElement:'color2', styleElement:'line2', value:'000000'}" id="color2" value="000000" style="background-color: #000000;" />
+		</div>
 	</div>
-	<div class="control">
-		<p class="control-p">
+	<div class="control top">
+		<div class="control-p">
 			<span class="title">
-				Bottom Bar Width: <span id="width-three" class="show">20</span>
+				Bottom Bar Width: 
 			</span>
+			<span id="width-three" class="show">20</span>
 			<a id="width-minus-three" class="minus-button">-</a>
 			<a id="width-plus-three" class="plus-button">+</a>
-		</p>
+		</div>
+		<div class="color">
+			<span>#</span>
+			<input type="text" class="jscolor {valueElement:'color3', styleElement:'line3', value:'000000'}" id="color3" value="000000" style="background-color: #000000;" />
+		</div>
 	</div>
-	<div class="control">
-		<p class="control-p">
+	<div style="clear: both;"></div>
+	<div class="control half">
+		<div class="control-p">
 			<span class="title">
-				Thickness: <span id="height" class="show">2</span>
+				Thickness: 
 			</span>
+			<span id="height" class="show">2</span>
 			<a id="height-minus" class="minus-button">-</a>
 			<a id="height-plus" class="plus-button">+</a>
-		</p>
+		</div>
 	</div>
-	<div class="control">
-		<p class="control-p">
+	<div class="control half sec">
+		<div class="control-p">
 			<span class="title">
-				Space: <span id="space" class="show">2</span>
+				Space: 
 			</span>
+			<span id="space" class="show">2</span>
 			<a id="space-minus" class="minus-button">-</a>
 			<a id="space-plus" class="plus-button">+</a>
-		</p>
+		</div>
 	</div>
-	<div class="control">
-		<p class="control-p">
+	<div style="clear: both;"></div>
+	<div class="control half">
+		<div class="control-p">
 			<span class="title">
-				Roundness: <span id="round" class="show">0</span>
+				Roundness: 
 			</span>
+			<span id="round" class="show">0</span>
 			<a id="round-minus" class="minus-button">-</a>
 			<a id="round-plus" class="plus-button">+</a>
-		</p>
+		</div>
 	</div>
-	<div class="control">
-		<p class="control-p">
-			<span class="title aligner">Align:</span>
-			<a id="align-right" class="align-button">right</a>
-			<a id="align-center" class="align-button">center</a>
-			<a id="align-left" class="align-button">left</a>
-		</p>
+	<div class="control half sec">
+		<div class="control-p">
+			<span class="title">
+				Align:
+			</span> 
+			<a id="align-left" class="align-button"><img src="align_l.png" /></a>
+			<a id="align-center" class="align-button"><img src="align_c.png" /></a>
+			<a id="align-right" class="align-button"><img src="align_r.png" /></a>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="control half">
+		<div class="control-p">
+			<span class="title">
+				Box Roundness: 
+			</span>
+			<span id="b-round" class="show">0</span>
+			<a id="b-round-minus" class="minus-button">-</a>
+			<a id="b-round-plus" class="plus-button">+</a>
+		</div>
+	</div>
+	<div class="control half sec back">
+		<div class="control-p">
+			<span class="title">
+				Box Background: 
+			</span>
+			<div class="color">
+				<span>#</span>
+				<input type="text" class="jscolor {valueElement:'color4', styleElement:'hamb', value:'ffffff'}" id="color4" value="ffffff" style="background-color: #ffffff;" />
+			</div>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="control half arrow">
+		<div class="control-p">
+			<span class="title">
+				Box Height <img src="arrow_1.png" />
+			</span>
+			<span id="b-height" class="show">40</span>
+			<a id="b-height-minus" class="minus-button">-</a>
+			<a id="b-height-plus" class="plus-button">+</a>
+		</div>
+	</div>
+	<div class="control half sec arrow">
+		<div class="control-p">
+			<span class="title">
+				Box Width <img src="arrow_2.png" />
+			</span>
+			<span id="b-width" class="show">40</span>
+			<a id="b-width-minus" class="minus-button">-</a>
+			<a id="b-width-plus" class="plus-button">+</a>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="code-block">
+		<h3>HTML</h3>
+		<pre>
+&lt;div class="hamburger"&gt;
+    &lt;a class="hamburger-link" id="hamb"&gt;
+        &lt;div class="hamburger-bar one" id="line1"&gt;&lt;/div&gt;
+        &lt;div class="hamburger-bar two" id="line2"&gt;&lt;/div&gt;
+        &lt;div class="hamburger-bar three" id="line3"&gt;&lt;/div&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</pre></div>
+	<div class="code-block">
+		<h3>CSS</h3>
+		<pre>
+.hamburger, .hamburger * {
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: block;
+    width: <span id="box-wi">40</span>px;
+    height: <span id="box-he">40</span>px;
+}
+
+.hamburger-link {
+    padding: <span id="box-pad-h">14</span>px <span id="box-pad-w">10</span>px;
+    display: inline-block;
+    cursor: pointer;
+    background: #<span id="box-bg">ffffff</span>;
+    border-radius: <span id="box-rad">0</span>px;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-bar {
+    display: block;
+    clear: both;
+    height: <span id="ht">2</span>px;
+    margin: <span>0</span> <span id="mright">0</span> <span id="mbot">3</span>px <span id="mleft">0</span>;
+    clear: both;
+    float: <span id="flt">none</span>;
+    border-radius: <span id="rad">0</span>px;
+}
+
+.hamburger-bar.one {
+    width: <span id="one-w">20</span>px;
+    background: #<span id="one-c">000000</span>;
+}
+
+.hamburger-bar.two {
+    width: <span id="two-w">20</span>px;
+    background: #<span id="two-c">000000</span>;
+}
+
+.hamburger-bar.three {
+    width: <span id="three-w">20</span>px;
+    background: #<span id="three-c">000000</span>;
+    margin-bottom: 0;
+}</pre>
 	</div>
 </div>
 </body>

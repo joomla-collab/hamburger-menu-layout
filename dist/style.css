@@ -1,26 +1,35 @@
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #38333b;
+	box-sizing: border-box;
+}
+
 body {
 	padding: 20px;
 	margin: 0;
-	font-family: Verdana, sans;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.hamburguer {
+.hamburger {
 	top: 20px;
 	left: 20px;
 	display: block;
+    width: 40px;
+    height: 40px;
 }
 
-.hamburguer-link {
-	padding: 15px 10px;
+.hamburger-link {
+	padding: 14px 10px;
 	display: inline-block;
 	cursor: pointer;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
 }
 
-.hamburguer-bar {
+.hamburger-bar {
 	display: block;
 	clear: both;
-	background: #333333;
-	width: 20px;
 	height: 2px;
 	border-radius: 0;
 	margin-bottom: 3px;
@@ -28,110 +37,225 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	clear: both;
+	float: none;
 }
 
-.hamburguer-bar.one {
-	
+.hamburger-bar.one {
+	width: 20px;
+	background: #000000;
 }
 
-.hamburguer-bar.two {
-	
+.hamburger-bar.two {
+	width: 20px;
+	background: #000000;
 }
 
-.hamburguer-bar.three {
-	
+.hamburger-bar.three {
+	width: 20px;
+    background: #000000;
+	margin-bottom: 0px;
 }
 
 .controls {
 	display: block;
-	max-width: 320px;
+	max-width: 620px;
 	margin-top: 30px;
 }
 
 .control {
-    background: #eeeeee none repeat scroll 0 0;
-    display: block;
-    margin: 0 0 10px;
-    padding: 8px 10px;
-    width: 100%;
+	background: #eeeeee none repeat scroll 0 0;
+	display: block;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.control.half {
+	width: 305px;
+	float: left;
+	margin: 0 10px 10px 0;
+	display: block;
+	clear: none;
+}
+
+.control.half.sec {
+	margin: 0 0 10px 0;
 }
 
 .control h3 {
-    color: #555555;
-    font-family: Verdana,sans;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
 }
 
-.control p.control-p {
-    color: #555555;
-    font-family: Verdana,sans;
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0;
-    padding: 0;
+.control .control-p {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: left;
 }
 
 .control .control-p .title {
-    display: inline-block;
-    padding-right: 10px;
-    width: 220px;
+	display: inline-block;
+	width: 200px;
+	font-size: 20px;
+	vertical-align: top;
+	line-height: 34px;
 }
 
-.control .control-p .title.aligner {
-    width: auto;
+.control.half .control-p .title {
+	width: 140px;
+}
+
+.control .color {
+	height: 36px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	margin: 0 0 0 10px;
+}
+
+.control .color img {
+	display: block;
+	height: 36px;
+	width: 36px;
+	float: left;
+}
+
+.control .color span {
+	font-size: 20px;
+	color: #38333b;
+	line-height: 36px;
+	margin: 0 5px 0 0;
+	padding: 0;
+	display: block;
+	float: left;
+}
+
+.control .color input {
+	font-size: 18px;
+	line-height: 32px;
+	margin: 0;
+	padding: 0 8px;
+	display: block;
+	float: left;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	width: 85px;
+	height: 36px;
 }
 
 .show {
-    background: #aaaaaa none repeat scroll 0 0;
-    float: right;
-    height: 36px;
-    margin-top: -2px;
-    padding: 0 15px;
+	background: #aaaaaa none repeat scroll 0 0;
+	height: 36px;
+	padding: 0;
+	width: 50px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px 0 0;
 }
 
 .minus-button {
-    background: #dddddd none repeat scroll 0 0;
-    color: #000000;
-    display: inline-block;
-    font-size: 20px;
-    height: 36px;
-    margin: 0 3px 0 0;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-    cursor: pointer;
+	background: #dddddd none repeat scroll 0 0;
+	color: #000000;
+	display: inline-block;
+	font-size: 24px;
+	height: 36px;
+	margin: 0 5px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+	cursor: pointer;
+	font-weight: 700;
+	line-height: 32px;
 }
 
 .plus-button {
-    background: #dddddd none repeat scroll 0 0;
-    color: #000000;
-    display: inline-block;
-    font-size: 20px;
-    height: 36px;
-    margin: 0 3px 0 0;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-    cursor: pointer;
+	background: #dddddd none repeat scroll 0 0;
+	color: #000000;
+	display: inline-block;
+	font-size: 24px;
+	height: 36px;
+	margin: 0 5px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+	cursor: pointer;
+	font-weight: 700;
+	line-height: 32px;
 }
 
 .align-button {
-    background: #dddddd none repeat scroll 0 0;
-    color: #000000;
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    font-size: 16px;
-    height: 30px;
-    margin: 0 8px 0 0;
-    padding: 0 10px;
-    text-align: center;
-    width: auto;
+	background: #dddddd none repeat scroll 0 0;
+	color: #000000;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	height: 36px;
+	margin: 0 5px 0 0;
+	padding: 5px 6px;
+	text-align: center;
+	width: 39px;
+	line-height: 1em;
+	vertical-align: top;
+}
+
+.align-button img {
+	width: 26px;
+	height: 26px;
+	display: block;
 }
 
 .spacer {
 	display: inline-block;
 	width: 20px;
+}
+
+.code-block {
+	display: block;
+	max-width: 620px;
+	background: #eeeeee;
+	padding: 5px 10px 10px 10px;
+	margin: 0 0 10px 0;
+}
+
+.code-block h3 {
+	margin: 0 0 10px 0;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.code-block pre {
+	font-family: 'Inconsolata', monospace;
+	margin: 0;
+}
+
+.control.back .color {
+    float: right;
+}
+
+.back.control .control-p {
+    width: calc(100% - 5px);
+}
+
+.control.arrow .control-p .title img {
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin: 7px 0 0 5px;
+}
+
+.control.top .control-p .title {
+    width: 342px;
+}
+
+.box-desc {
+    padding: 0 0 30px 0;
+    margin: 0;
+    font-size: 15px;
 }
